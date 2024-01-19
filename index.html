@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripcion" content="Pagina" />
+    <meta name="keywords" content="html5, css, pagina, diseño, bootstrap" />
+    <meta name="author" content="Dilan Torres" />
+    <link rel="icon" href="imagenes/logo.jpg" type="imagenes/r-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary minav">
+            <div class="container-fluid">
+              <img src="imagenes/LOGO RACING HORIZONTAL.png" alt="logo horizontal" height="70">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active cambiarColor" aria-current="page" href="#"><strong>Inicio</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link cambiarColor" href="escuela.html"><strong>Escuela de conduccion</strong></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle cambiarColor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <strong>Nuestros servicios</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item cambiarColor" href="taller.html">Taller mecanico</a></li>
+                      <li><a class="dropdown-item cambiarColor" href="cursos.html">Nuestros cursos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item cambiarColor" href="contactos.html">Contacto</a></li>
+                  </li> 
+                </ul>
+              </div>
+              <ul>
+                <li class="face">
+                    <img src="imagenes/facebook.png" alt="face" height="25">
+                    <a href="https://www.facebook.com/racingescueladeconduccion/" target="_blank" style="color: black;">Facebook</a>
+                </li>
+                <li class="wpp">
+                    <img src="imagenes/whatsapp.png" alt="wpp" height="25">
+                    <a href="https://api.whatsapp.com/send?phone=593992526179" target="_blank" style="color: black;">Whatsapp</a>
+                </li>
+              </ul>
+              <button style="background-color: black; color: white;" id="cambiarTemaBtn" onclick="cambiarTema()">Cambiar Tema</button>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <hr>
+    <div class="container carrusel-fotos">   
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/img moto.png" class="d-block w-100" alt="moto">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/alumnos racing.png" class="d-block w-100" alt="alumnos">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/racing carrusel.png" class="d-block w-100" alt="racing carousel">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 style="color:rgb(0, 75, 0)" class="h2racing"><strong>RACING: ESCUELA DE CONDUCCION</strong></h2>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-7 col-lg-5 cuadro-1">
+                <h2 style="color: rgb(0, 75, 0);"><strong>¿Quiénes somos?</strong></h2>
+                <hr>
+                <h6>
+                    ¡Somos <strong>líderes</strong> en formación y perfeccionamiento de la conducción de motocicletas!
+                    <br><br>
+                    La escuela de conducción RACING es legalmente constituida mediante escritura pública celebrada en la notaría Sexagésima 
+                    novena del Cantón Quito, el 22 de Septiembre del 2014, y se inscribió en el registro Mercantil 3977 del mismo cantón el 
+                    26 de septiembre del 2014, mediante resolución 153-DE-DTHA-ANT-2015.
+                    <br><br>
+                    Apegados estrictamente a la LOTTTSV y las regulaciones de la ANT, nuestra oferta radica en la calidad y calidez del 
+                    aprendizaje de nuestros estudiantes; contribuyendo así al desarrollo de una nueva convivencia vial basada en el respeto
+                    y enfocando una mejor sociedad ecuatoriana.
+                  </h6>
+            </div>
+            <div class="col-sm-12 col-md-7 col-lg-5 cuadro-2">
+                <h2 style="color: rgb(0, 75, 0);"><strong>Lo que hacemos...</strong></h2>
+                <hr>
+                <h6>
+                    NUESTRA PREMISA FUNDAMENTAL: <strong>EDUCAMOS PARA SALVAR VIDAS</strong> <br>
+                    Racing escuela de conducción de choferes no profesionales brinda servicios de capacitación, asesoramiento a instituciones
+                    gubernamentales, empresas y a la sociedad en general y tiene su sede en la ciudad de Quito, Ecuador.
+                    <br><br>
+                    Nuestra orientación de servicio tiene un enfoque social; cursos, talleres, prácticas y actividades virtuales hacen la 
+                    diferencia en la atención personalizada que brindamos al público. <br>
+                    Gracias a nuestras premisas y nuestro compromiso hemos logrado posicionar a nuestra Institución con altos niveles 
+                    respecto a la competencia.
+                </h6>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <h2 style="color: rgb(0, 75, 0);" class="h2racing"><strong>¿Donde nos encuentras?</strong></h2>
+    <br>
+    <div class="row">
+        <div class="col-sm-12 col-md-10 col-lg-9 cuadro-3" >
+            <div style="text-align: center;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.775007829969!2d-78.5514429!3d-0.2669735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fd4c1c591899d43%3A0x84257e5a7989d8d0!2sRacing%20Escuela%20de%20Conducci%C3%B3n!5e0!3m2!1ses-419!2sec!4v1704381848746!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div style="text-align: center;">
+                <p>
+                    <address><strong><em>Nos ubicamos junto a almacenes "Al Costo", en el sur de Quito; Av. Principal Mariscal Sucre y Tabiazo.</em></strong></address>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <footer>
+        <div class="container pie">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 cuadro-4">
+                    <h4 style="color: white; text-align: center;">Visite Racing</h4>
+                    <hr style="color: white;">
+                    <p style="color: white;">Atendemos en nuestras oficinas en los siguientes horarios: <br> <br>
+                        <div style="text-align: center; color: white;">
+                        Lunes - Viernes: 7 a. m. - 7 p. m. <br>
+                        Sábado: 7 a. m. - 7 p. m. <br>
+                        Domingo: 7 a. m. - 6 p. m <br>
+                        Agende una cita o marque: 0992526179 - 026012116</p>
+                        </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 cuadro-5">
+                    <h4 style="color: white; text-align: center;">Síganos en nuestras redes sociales:</h4>
+                    <hr style="color: white;">
+                    <br>
+                    <div style="text-align: center;">
+                    <img src="imagenes/facebook.png" alt="face" height="25">
+                    <a href="https://www.facebook.com/racingescueladeconduccion/">Facebook</a> <br><br>
+
+                    <img src="imagenes/whatsapp.png" alt="wpp" height="25">
+                    <a href="https://api.whatsapp.com/send?phone=593992526179">Whatsapp</a> <br><br>
+
+                    <img src="imagenes/youtube.png" alt="YT" height="25">
+                    <a href="https://www.youtube.com/channel/UCUJAZkwYrFD2UkpTkywlG_">Youtube</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 cuadro-6">
+                    <h4 style="color: white; text-align: center;">Sitios de interés:</h4>
+                    <hr style="color: white;">
+                    <p style="text-align: center;">
+                        <a href="https://www.ant.gob.ec">Agencia Nacional de Tránsito</a><br><br>
+                        <a href="https://www.amt.gob.ec">Agencia Metropolitana de Tránsito</a><br><br>
+                        <a href="https://www.ant.gob.ec/simulador/">Simulador de examen teórico ANT</a><br><br>
+                        <a href="https://www.ant.gob.ec/banco-de-preguntas-licencias/">Bancos de preguntas</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

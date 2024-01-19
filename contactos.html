@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripcion" content="Pagina" />
+    <meta name="keywords" content="html5, css, pagina, diseño, bootstrap" />
+    <meta name="author" content="Dilan Torres" />
+    <link rel="icon" href="imagenes/logo.jpg" type="imagenes/r-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/contactos.css" />
+    <title>Contactos</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary minav">
+            <div class="container-fluid">
+              <img src="imagenes/LOGO RACING HORIZONTAL.png" alt="logo horizontal" height="70">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><strong>Inicio</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="escuela.html"><strong>Escuela de conduccion</strong></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <strong>Nuestros servicios</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="taller.html">Taller mecanico</a></li>
+                      <li><a class="dropdown-item" href="cursos.html">Nuestros cursos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="contactos.html">Contacto</a></li>
+                  </li> 
+                </ul>
+              </div>
+              <ul>
+                <li class="face">
+                    <img src="imagenes/facebook.png" alt="face" height="25">
+                    <a href="https://www.facebook.com/racingescueladeconduccion/" target="_blank" style="color: black;">Facebook</a>
+                </li>
+                <li class="wpp">
+                    <img src="imagenes/whatsapp.png" alt="wpp" height="25">
+                    <a href="https://api.whatsapp.com/send?phone=593992526179" target="_blank" style="color: black;">Whatsapp</a>
+                </li>
+              </ul>
+              <button style="background-color: black; color: white;" id="cambiarTemaBtn" onclick="cambiarTema()">Cambiar Tema</button>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-11 cuadro-contacto">
+                <h4><strong><em>Dirección:</em></strong></h4>
+                <hr>
+                <address><em>Av. Principal Mariscal Sucre y Tabiazo, junto a almacenes "Al Costo".</em></address>
+                <hr>
+                <h4><strong><em>Telefonos</em></strong></h4>
+                <hr>
+                <p>
+                    0998161647 / 3038188
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-11 cuadro-formulario">
+                <h4><strong><em>Horarios de atencion:</em></strong></h4>
+                <hr>
+                <p>
+                    <strong>Atendemos de LUNES a DOMINGO.</strong>
+                    <div style="text-align: center; color: rgb(0, 0, 0);">
+                        Lunes - Viernes: 7 a. m. - 7 p. m. <br>
+                        Sábado: 7 a. m. - 7 p. m. <br>
+                        Domingo: 7 a. m. - 6 p. m <br>
+                        Agende una cita marcando a: 0992526179 - 026012116</p>            
+                </div> <br>
+                <div class="col-11 cuadro-1">
+                    <section>
+                    <img class="im1" src="imagenes/local.png" alt="local">
+                    <img src="imagenes/carroshd.jpg" alt="carroshd">
+                    <img src="imagenes/motoRacing.jpg" alt="motoRacing">
+                    <img src="imagenes/racingArriba.jpg" alt="racingArriba">
+                    <img src="imagenes/mecanicaMotos.jpg" alt="mecanicaMotos">
+                    </section>
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-11 cuadro-formulario">
+                <h4><strong><em>Estimados Usuarios:</em></strong></h4>
+                <p>
+                    Le invitamos en esta sección a registrar sus datos para recibir información detallada sobre los 
+                    servicios que nuestra Institución ofrece a la ciudadanía. Los datos aquí ingresados servirán para 
+                    establecer contacto personal y no serán compartidos.
+                </p>
+                <form style="text-align: center;" action="registro.php" method="post">
+                    <label for="idNombre"><strong>Ingrese su nombre:</strong></label>
+                    <br>
+                    <input type="text" name="nombre" id="idNombre" placeholder="Nombre:">
+                    <br><br>
+                    <label for="idApellido"><strong>Ingrese su apellido:</strong></label>
+                    <br>
+                    <input type="text" name="apellido" id="idApellido" placeholder="Apellido">
+                    <br><br>
+                    <label for="idEmail"><strong>Ingrese su email:</strong></label>
+                    <br>
+                    <input type="text" name="email" id="idEmail" placeholder="Email">
+                    <br><br>
+                    <label for="idNumero"><strong>Ingrese su numero:</strong></label>
+                    <br>
+                    <input type="text" name="numero" id="idNumero" placeholder="Número telefonico">
+                    <br><br>
+                    <div class="container-fluid">
+                    <input class="cambiarEstiloBoton" type="submit" name="Enviar" onmouseover="cambiarEstilo(this)" onmouseout="restaurarEstilo(this)" onclick="enviarFormulario()">
+                    <input class="cambiarEstiloBoton" type="reset" name="Resetear" onmouseover="cambiarEstilo(this)" onmouseout="restaurarEstilo(this)" onclick="mostrarMensajeR()">
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <br>
+    <footer>
+        <div class="container pie">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 cuadro-4">
+                    <h4 style="color: white; text-align: center;">Visite Racing</h4>
+                    <hr style="color: white;">
+                    <p style="color: white;">Atendemos en nuestras oficinas en los siguientes horarios: <br> <br>
+                        <div style="text-align: center; color: white;">
+                        Lunes - Viernes: 7 a. m. - 7 p. m. <br>
+                        Sábado: 7 a. m. - 7 p. m. <br>
+                        Domingo: 7 a. m. - 6 p. m <br>
+                        Agende una cita o marque: 0992526179 - 026012116</p>
+                        </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 cuadro-5">
+                    <h4 style="color: white; text-align: center;">Síganos en nuestras redes sociales:</h4>
+                    <hr style="color: white;">
+                    <br>
+                    <div style="text-align: center;">
+                    <img src="imagenes/facebook.png" alt="face" height="25">
+                    <a href="https://www.facebook.com/racingescueladeconduccion/">Facebook</a> <br><br>
+
+                    <img src="imagenes/whatsapp.png" alt="wpp" height="25">
+                    <a href="https://api.whatsapp.com/send?phone=593992526179">Whatsapp</a> <br><br>
+
+                    <img src="imagenes/youtube.png" alt="YT" height="25">
+                    <a href="https://www.youtube.com/channel/UCUJAZkwYrFD2UkpTkywlG_">Youtube</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 cuadro-6">
+                    <h4 style="color: white; text-align: center;">Sitios de interés:</h4>
+                    <hr style="color: white;">
+                    <p style="text-align: center;">
+                        <a href="https://www.ant.gob.ec">Agencia Nacional de Tránsito</a><br><br>
+                        <a href="https://www.amt.gob.ec">Agencia Metropolitana de Tránsito</a><br><br>
+                        <a href="https://www.ant.gob.ec/simulador/">Simulador de examen teórico ANT</a><br><br>
+                        <a href="https://www.ant.gob.ec/banco-de-preguntas-licencias/">Bancos de preguntas</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/contacto.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
